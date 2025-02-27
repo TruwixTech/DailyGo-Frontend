@@ -1,6 +1,6 @@
 import React from 'react';
 import BGimage from '../../assets/Bgimage1.svg';
-import BGimage2 from '../../assets/Bgimage2.svg';
+import BGimage2 from '../../assets/bgimage2.svg';
 import Star from '../../assets/Star.svg';
 import img1 from '../../assets/Vector.svg';
 
