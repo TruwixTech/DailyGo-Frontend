@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import ring from '../assets/ring.png'
 import Navbar from '../Component/Navbar'
-import { Link } from 'react-router-dom'
 import Footer from '../Component/Footer'
 const TermsPage = () => {
     useEffect(() => {
@@ -10,7 +9,7 @@ const TermsPage = () => {
  
     return (
         <>
-        <div className='p-4 w-full h-auto'>
+        <div className='p-6 w-full h-auto'>
             <div className='w-full md:h-[297px] h-auto relative bg-[#496f69] rounded-3xl flex flex-col  gap-2 md:pb-10 pb-6  '>
                 <Navbar />
                 <hr className='border-1   w-[90%] mx-auto border-gray-400  '/>
