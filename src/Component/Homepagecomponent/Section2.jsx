@@ -1,10 +1,10 @@
 import React from 'react';
 import image from '../../assets/bgimage3.png';
-import iphone from '../../assets/iphone.png';
+import iphone from '../../assets/iPhone.png';
 
 function Section2() {
     return (
-        <div className='w-full min-h-screen flex flex-col py-10 px-4'>
+        <div className='w-full min-h-screen flex flex-col py-10 px-4 md:px-12 lg:px-20'>
             <div className='w-full md:h-auto lg:h-[600px] h-auto bg-[#366059] rounded-2xl relative flex flex-col lg:flex-row overflow-hidden'>
 
                 {/* Background Image */}

@@ -7,7 +7,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className='w-full h-[102px] flex justify-end px-5 md:px-10 lg:px-14  relative z-40 '>
+        <div className='w-full h-auto flex justify-end px-5 md:px-10 lg:px-14  relative z-40 '>
             {/* <NavLink
                 to="/"
                 className="w-28 h-40 rounded-b-3xl bg-white md:px-6 "

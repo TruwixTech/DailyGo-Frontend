@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-8 border-t border-gray-400 pt-4 flex flex-col md:flex-row items-center justify-between">
+        <div className="mt-4 border-t border-gray-400 pt-4 flex flex-col md:flex-row items-center justify-between">
           <div className="flex gap-6 text-sm">
             <Link to="/termscondition">Terms & Conditions</Link>
             <Link to="#">Privacy Policy</Link>
