@@ -5,7 +5,7 @@ import iphone from '../../assets/iPhone.png';
 function Section2() {
     return (
         <div className='w-full min-h-screen flex flex-col py-10 px-4 md:px-12 lg:px-14'>
-            <div className='w-full md:h-auto lg:h-[600px] h-auto bg-[#366059] rounded-2xl relative flex flex-col lg:flex-row overflow-hidden'>
+            <div className='w-full md:h-auto lg:h-[600px] h-auto bg-[#004439] rounded-2xl relative flex flex-col lg:flex-row overflow-hidden'>
 
                 {/* Background Image */}
                 <img src={image} className='absolute inset-0 w-full h-full object-cover opacity-20 md:opacity-100' alt="Background" />

@@ -21,7 +21,7 @@ const HomePage = () => {
         <>
 
             <div className='w-full min-h-screen bg-white p-6'>
-                <div className=' rounded-3xl  bg-[#366059] overflow-hidden relative '>
+                <div className=' rounded-3xl  bg-[#004439] overflow-hidden relative '>
                     <div>
                         <img src={Ring} className='absolute bottom-7'/>
                     </div>
@@ -61,8 +61,8 @@ const HomePage = () => {
                     <Section />
                 </div>
                 <div className='flex md:flex-row flex-col gap-8 md:gap-20 justify-center items-center py-20 lg:pb-0'>
-                    <button className="w-full lg:w-[40%]  flex items-center justify-center gap-4 px-4 py-2 bg-[#004439] text-white font-bold md:text-[30px] rounded-lg cursor-pointer"><span><img src={hireworker} className='w-full h-full pr-6 '/></span>Hire a Worker</button>
-                    <button className= 'w-full lg:w-[40%] flex  items-center justify-center gap-4  px-4 py-2 bg-[#004439] text-white md:text-[30px] font-bold rounded-lg cursor-pointer'><span><img src={findworker} className='w-full h-full pr-6'/></span>Find a Worker</button>
+                    <button className="w-full lg:w-[40%]  flex items-center justify-center gap-4 px-4 py-2 bg-[#004439] text-white font-bold md:text-[30px] rounded-lg cursor-pointer"><span><img src={hireworker} className='w-full h-full pr-6 '/></span>Find Worker</button>
+                    <button className= 'w-full lg:w-[40%] flex  items-center justify-center gap-4  px-4 py-2 bg-[#004439] text-white md:text-[30px] font-bold rounded-lg cursor-pointer'><span><img src={findworker} className='w-full h-full pr-6'/></span>Find Work</button>
                 </div>
                 <Section1 />
                 <PopularCategory />

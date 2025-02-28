@@ -41,20 +41,20 @@ const Navbar = () => {
                         >
                             About Us
                         </NavLink>
-                        <NavLink
-                            to="/event"
+                         <NavLink
+                            to="/team"
                             className="text-[#01210F] text-xl  font-Satoshi"
                             onClick={() => setIsOpen(false)}
                         >
-                            Events
+                            Our Team
                         </NavLink>
-                        <NavLink
+                        {/*<NavLink
                             to="/news"
                             className="text-[#01210F] text-xl  font-Satoshi"
                             onClick={() => setIsOpen(false)}
                         >
                             News
-                        </NavLink>
+                        </NavLink> */}
                         <NavLink
                             to="/gallery"
                             className="text-[#01210F] text-xl  font-Satoshi"
@@ -76,24 +76,24 @@ const Navbar = () => {
                                 boxShadow: "white", // Custom box shadow
                             }}
                         >
-                            Download the App Now
+                            Download the App
                         </NavLink>
 
                     </div>
                 )}
-                <div className="hidden gap-6 lg:flex xl:gap-10">
+                <div className="hidden gap-6 lg:flex xl:gap-12">
                     <NavLink to="/" className="text-white text-2xl  font-Satoshi">
                         Home
                     </NavLink>
                     <NavLink to="/about" className="text-white text-2xl  font-Satoshi">
                         About Us
                     </NavLink>
-                    <NavLink to="/event" className="text-white text-2xl  font-Satoshi">
-                        Events
+                     <NavLink to="/team" className="text-white text-2xl  font-Satoshi">
+                        Our Team
                     </NavLink>
-                    <NavLink to="/news" className="text-white text-2xl  font-Satoshi">
+                    {/* <NavLink to="/news" className="text-white text-2xl  font-Satoshi">
                         News
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink to="/gallery" className="text-white text-2xl  font-Satoshi">
                         Gallery
                     </NavLink>
@@ -106,12 +106,12 @@ const Navbar = () => {
                 </div>
                 <NavLink
                     to="/registration"
-                    className="hidden lg:flex px-3 py-2 bg-[#ffff]  text-[16px] rounded-3xl text-[#366059] font-Satoshi xl:py-2.5"
+                    className="hidden lg:flex px-6 font-semibold py-2 bg-[#ffff]  text-[16px] rounded-3xl text-[#366059] font-Satoshi xl:py-2.5"
                     style={{
                         boxShadow: "white", // Custom box shadow
                     }}
                 >
-                    Download the App Now
+                    Download the App
                 </NavLink>
             </div>
         

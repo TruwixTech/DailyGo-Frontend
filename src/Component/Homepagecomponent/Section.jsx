@@ -8,8 +8,8 @@ const Section = () => {
         <div className="flex gap-2">
           {[...Array(10)].map((_, index) => (
             <div key={index} className="flex items-center  gap-16 mx-4">
-              <span className="text-sm md:text-base lg:text-lg font-semibold">Construction Work</span>
-              <div className="w-6 h-6 bg-[#2c4b4b] rounded-full"></div>
+              <span className="text-sm md:text-base lg:text-lg font-bold">Construction Work</span>
+              <div className="w-10 h-10 bg-[#2c4b4b] rounded-full"></div>
             </div>
           ))}
         </div>
