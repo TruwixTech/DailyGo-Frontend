@@ -11,6 +11,11 @@ import Section5 from '../Component/Homepagecomponent/Section5'
 import Footer from '../Component/Footer'
 import left from '../assets/left1.png'
 import horizontal from '../assets/horizontal.png'
+import findworker from '../assets/findworker.png'
+import hireworker from '../assets/hireworker.png'
+import PopularCategory from '../Component/Homepagecomponent/PopularCategory'
+import How from '../Component/Homepagecomponent/How'
+
 const HomePage = () => {
     return (
         <>
@@ -27,7 +32,7 @@ const HomePage = () => {
                       <img src={horizontal} className=' absolute bottom-40 left-45 z-40 ' />
                     </div>
                     <Navbar />
-                    <hr className='border-0.2  w-[90%] mx-auto border-white  ' />
+                    <div className='h-[0.5px] w-[90%] mx-auto bg-[#4a7069]  ' />
                     <div className="flex flex-col lg:flex-row items-center justify-between px-6 md:px-20 text-white gap-8 ">
                         {/* Left Side - Text & CTA */}
                         <div className="lg:w-1/2 w-full items-center justify-center text-center pt-10 lg:pt-0">
@@ -55,8 +60,14 @@ const HomePage = () => {
                     </div>
                     <Section />
                 </div>
+                <div className='flex md:flex-row flex-col gap-8 md:gap-20 justify-center items-center py-20 lg:pb-0'>
+                    <button className="w-full lg:w-[40%]  flex items-center justify-center gap-4 px-4 py-2 bg-[#004439] text-white font-bold md:text-[30px] rounded-lg cursor-pointer"><span><img src={hireworker} className='w-full h-full pr-6 '/></span>Hire a Worker</button>
+                    <button className= 'w-full lg:w-[40%] flex  items-center justify-center gap-4  px-4 py-2 bg-[#004439] text-white md:text-[30px] font-bold rounded-lg cursor-pointer'><span><img src={findworker} className='w-full h-full pr-6'/></span>Find a Worker</button>
+                </div>
                 <Section1 />
+                <PopularCategory />
                 <Section2 />
+                <How />
                 <Section4 />
                 <Section5 />
             </div>
