@@ -6,7 +6,7 @@ import Right from '../assets/right.png'
 import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
-    <footer className="bg-[#366059] text-white py-10 px-6 md:px-16">
+    <footer className="bg-[#004439] text-white py-10 px-6 md:px-16">
       <div className='flex flex-col'>
         <div className="flex flex-col md:flex-row md:justify-between  gap-8 ">
           {/* Left Section */}
