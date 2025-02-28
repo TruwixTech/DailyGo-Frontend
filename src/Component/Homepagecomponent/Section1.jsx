@@ -35,7 +35,7 @@ function Section1() {
 
                 {/* Title Section */}
                 <div className='text-center pb-6 md:px-10 px-4 w-full flex justify-center gap-10 mt-10 md:mt-0' >
-                    <h1 className='text-2xl text-center md:text-[55px] lg:text-5xl  text-black  md:w-[80%] w-full'>
+                    <h1 className='text-2xl text-center md:text-[55px] lg:text-5xl  text-black 2xl:text-6xl font-semibold  md:w-[80%] w-full'>
                         From construction to cleaning, hire experienced daily workers with ease.
                     </h1>
                 </div>

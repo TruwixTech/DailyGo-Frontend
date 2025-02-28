@@ -115,7 +115,7 @@ function Contactus() {
   return (
     <>
       <div className='w-full h-auto bg-white p-6 overflow-x-hidden'>
-        <div className='w-full md:h-[300px] h-auto bg-[#38615a] rounded-3xl  relative pb-4'>
+        <div className='w-full md:h-[300px] h-auto bg-[#004439] rounded-3xl  relative pb-4'>
           <Navbar />
           <div>
           </div>
