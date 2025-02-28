@@ -7,6 +7,10 @@ import mailicon from "../assets/mailicon.svg";
 import phone from "../assets/phone.svg";
 import image from '../assets/contactimage.png'
 import Footer from '../Component/Footer'
+import starw from '../assets/starwhite.png'
+import righth from '../assets/line.svg'
+import rightv from '../assets/left2.png'
+
 function Contactus() {
   const [formData, setFormData] = useState({
     name: "",
@@ -110,17 +114,20 @@ function Contactus() {
   };
   return (
     <>
-      <div className='w-full h-auto bg-white p-6'>
+      <div className='w-full h-auto bg-white p-6 overflow-x-hidden'>
         <div className='w-full md:h-[300px] h-auto bg-[#38615a] rounded-3xl  relative pb-4'>
           <Navbar />
           <div>
           </div>
-          <hr className='border-1   w-[90%] mx-auto border-gray-400  ' />
+          <div className='h-[0.5px] w-[90%] mx-auto bg-[#4a7069]  ' />
           <h1 className='text-center font-semibold text-[30px] md:text-[60px] text-white'>Contact us</h1>
           <div className='flex gap-2 items-center justify-center text-white '>
             <span >Home</span><span>-</span><span>Contact us</span>
           </div>
           <img src={ring} className=' absolute top-0 w-full h-full' />
+          <img src={starw} className='hidden md:block absolute top-30 right-24' />
+          <img src={righth} className='hidden md:block absolute top-40 -right-25 ' />
+          <img src={rightv} className='hidden md:block absolute top-40 right-27' />
         </div>
         {/* form */}
         <div className="grid md:grid-cols-2 gap-8 font-[Roboto] pt-10 md:px-10 px-2  py-10">
