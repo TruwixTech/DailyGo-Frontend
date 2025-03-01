@@ -10,6 +10,7 @@ import Footer from '../Component/Footer'
 import starw from '../assets/starwhite.png'
 import righth from '../assets/line.svg'
 import rightv from '../assets/left2.png'
+import shadow from '../assets/shadow.png'
 
 function Contactus() {
   const [formData, setFormData] = useState({
@@ -114,27 +115,27 @@ function Contactus() {
   };
   return (
     <>
-      <div className='w-full h-auto bg-white p-6 overflow-x-hidden'>
+      <div className='w-full h-auto bg-white p-4 md:p-8 overflow-x-hidden'>
         <div className='w-full md:h-[300px] h-auto bg-[#004439] rounded-3xl  relative pb-4'>
           <Navbar />
           <div>
           </div>
           <div className='h-[0.5px] w-[90%] mx-auto bg-[#4a7069]  ' />
-          <h1 className='text-center font-semibold text-[30px] md:text-[60px] text-white'>Contact us</h1>
-          <div className='flex gap-2 items-center justify-center text-white '>
+          <h1 className='text-center font-semibold text-[30px] md:text-[60px] lg:text-7xl pt-7 text-white'>Contact us</h1>
+          <div className='flex gap-2 items-center justify-center text-white pt-4'>
             <span >Home</span><span>-</span><span>Contact us</span>
           </div>
           <img src={ring} className=' absolute top-0 w-full h-full' />
           <img src={starw} className='hidden md:block absolute top-30 right-24' />
           <img src={righth} className='hidden md:block absolute top-40 -right-25 ' />
           <img src={rightv} className='hidden md:block absolute top-40 right-27' />
+          <img src={shadow} className='absolute top-0 left-0' />
         </div>
         {/* form */}
-        <div className="grid md:grid-cols-2 gap-8 font-[Roboto] pt-10 md:px-10 px-2  py-10">
+        <div className="grid md:grid-cols-2 gap-8 pt-10 md:px-10 px-2  py-10">
           {/* Left Section - Contact Details */}
           <div className="space-y-6 mt-8">
-            <h3 className="text-[#0f110f] text-2xl font-bold xl:text-3xl mb-1">| Contact us |</h3>
-            <h3 className="text-6xl font-bold text-[#366059] leading-15">
+            <h3 className="text-6xl font-bold text-[#374836] leading-15">
               Contact us For <br /> Support
             </h3>
 
@@ -157,7 +158,7 @@ function Contactus() {
           </div>
 
           {/* Right Section - Contact Form */}
-          <form onSubmit={handleSubmit} className="space-y-6 font-[Roboto]">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Name */}
               <div>
@@ -167,7 +168,7 @@ function Contactus() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full py-4 px-4 bg-gray-400 rounded-[25px] focus:outline-none focus:ring-2 focus:ring-green-600"
+                  className="w-full py-4 px-4 bg-[#F0EEEE] rounded-[25px] focus:outline-none focus:ring-2 focus:ring-green-600"
                   placeholder="Your full name"
                 />
               </div>
@@ -180,7 +181,7 @@ function Contactus() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full py-4 px-4 bg-gray-400 rounded-[25px] focus:outline-none focus:ring-2 focus:ring-green-600"
+                  className="w-full py-4 px-4 bg-[#F0EEEE] rounded-[25px] focus:outline-none focus:ring-2 focus:ring-green-600"
                   placeholder="Your email address"
                 />
               </div>
@@ -195,7 +196,7 @@ function Contactus() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full py-4 px-4 bg-gray-400 rounded-[25px] focus:outline-none focus:ring-2 focus:ring-green-600"
+                  className="w-full py-4 px-4 bg-[#F0EEEE] rounded-[25px] focus:outline-none focus:ring-2 focus:ring-green-600"
                   placeholder="Your Phone Number"
                 />
               </div>
@@ -208,7 +209,7 @@ function Contactus() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full py-4 px-4 bg-gray-400 rounded-[25px] focus:outline-none focus:ring-2 focus:ring-green-600"
+                  className="w-full py-4 px-4 bg-[#F0EEEE] rounded-[25px] focus:outline-none focus:ring-2 focus:ring-green-600"
                   placeholder="Your subject"
                 />
               </div>
@@ -221,7 +222,7 @@ function Contactus() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full py-4 px-4 resize-none bg-gray-400 rounded-[25px] focus:outline-none focus:ring-2 focus:ring-green-600"
+                className="w-full py-4 px-4 resize-none bg-[#F0EEEE] rounded-[25px] focus:outline-none focus:ring-2 focus:ring-green-600"
                 placeholder="Write message"
                 rows="5"
               />

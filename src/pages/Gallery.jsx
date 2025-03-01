@@ -4,6 +4,10 @@ import ring from "../assets/ring.png";
 import image1 from "../assets/iPhone1.png";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import Footer from "../Component/Footer";
+import shadow from '../assets/shadow.png'
+import starw from '../assets/starwhite.png'
+import righth from '../assets/line.svg'
+import rightv from '../assets/left2.png'
 
 function Gallery() {
     const [selectedImage, setSelectedImage] = useState(image1);
@@ -29,18 +33,22 @@ function Gallery() {
 
     return (
         <>
-            <div className="w-full h-auto bg-white p-8 overflow-hidden">
+            <div className="w-full h-auto bg-white p-4 md:p-8 overflow-hidden">
                 {/* Header Section */}
-                <div className="w-full md:h-[300px] h-auto bg-[#004439] rounded-2xl relative pb-6">
+                <div className="w-full md:h-[300px] h-auto bg-[#004439] rounded-3xl relative pb-6">
                     <Navbar />
-                    <hr className="border-1 w-[90%] mx-auto border-gray-400" />
-                    <h1 className="text-center font-semibold text-[30px] md:text-[60px] text-white">
+                    <div className='h-[0.5px] w-[90%] mx-auto bg-[#4a7069]  ' />
+                    <h1 className="text-center font-semibold text-[30px] md:text-[60px] lg:text-7xl pt-7 text-white">
                         Gallery
                     </h1>
-                    <div className="flex gap-2 items-center justify-center text-white">
+                    <div className="flex gap-2 items-center justify-center text-white pt-4">
                         <span>Home</span> <span>-</span> <span>Gallery</span>
                     </div>
                     <img src={ring} className="absolute top-0 w-full h-full" alt="ring" />
+                    <img src={shadow} className='absolute top-0 left-0' />
+                    <img src={starw} className='hidden md:block absolute top-30 right-24' />
+                    <img src={righth} className='hidden md:block absolute top-40 -right-25 ' />
+                    <img src={rightv} className='hidden md:block absolute top-40 right-27' />
                 </div>
 
                 <div className="w-full h-auto flex flex-col my-10 md:flex-row">
@@ -77,7 +85,7 @@ function Gallery() {
                             {/* Right Button */}
                             <button
                                 onClick={nextSlide}
-                                className="absolute right-0 md:-right-5 text-gray-400 p-2 rounded-full cursor-pointer z-10"
+                                className="absolute -right-5 text-gray-400 p-2 rounded-full cursor-pointer z-10"
                             >
                                 <MdArrowForwardIos size={30} />
                             </button>
