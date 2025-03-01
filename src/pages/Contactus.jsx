@@ -142,17 +142,14 @@ function Contactus() {
             <div>
               <h4 className="font-semibold text-2xl text-[#373f43] mb-4">Emails</h4>
               <p className="text-[#8c959f] flex gap-4 items-center">
-                <span><img src={mailicon} alt="" /></span> Cowtrition2019@gmail.com
-              </p>
-              <p className="text-[#8c959f] flex gap-4 items-center">
-                <span><img src={mailicon} alt="" /></span> agritechinnovation24@gmail.com
+                <span><img src={mailicon} alt="" /></span> dailygoindia@gmail.com
               </p>
             </div>
 
             <div>
               <h4 className="font-semibold text-2xl text-[#373f43] mb-4">Reach out to us at</h4>
               <p className="text-[#8c959f] flex gap-4 items-center">
-                <span><img src={phone} alt="" /></span> 9540845510, 9582057533
+                <span><img src={phone} alt="" /></span> +91-9066384407
               </p>
             </div>
           </div>
