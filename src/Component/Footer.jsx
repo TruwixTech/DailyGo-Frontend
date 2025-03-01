@@ -46,13 +46,12 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p>Dailygo@company.com</p>
-              <p className="mt-2">+6222 333 444</p>
+              <p>dailygoindia@gmail.com</p>
+              <p className="mt-2">+91-9066384407</p>
             </div>
           </div>
           </div>
         
-
 
         </div>
 
