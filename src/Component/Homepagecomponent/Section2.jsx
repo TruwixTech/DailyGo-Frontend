@@ -11,9 +11,9 @@ function Section2() {
                 <img src={image} className='absolute inset-0 w-full h-full object-cover opacity-20 md:opacity-100' alt="Background" />
 
                 {/* Left Content */}
-                <div className='relative z-10 lg:w-1/2 w-full py-10 px-6 md:px-12 flex flex-col gap-3 md:gap-10 text-center md:text-left'>
-                    <h1 className='text-white text-2xl lg:text-4xl xl:text-5xl leading-snug font-semibold'>
-                        Get reliable, affordable, and labor services at your fingertips.
+                <div className='relative z-30 lg:w-1/2 w-full py-10 px-6 md:px-12 flex flex-col gap-6 md:gap-10 xl:gap-8 text-center md:text-left'>
+                    <h1 className='text-white text-2xl md:text-4xl xl:text-5xl 2xl:text-6xl xl:leading-20 font-semibold'>
+                        Get reliable, <br /> affordable, and labor <br /> services at your <br /> fingertips.
                     </h1>
                     <p className='lg:text-lg text-white'>
                         The Strong Workout Tracker is designed for serious individuals who have significant workout experience and a clear understanding of their fitness goals.
@@ -24,7 +24,7 @@ function Section2() {
                 </div>
 
                 {/* Right Image */}
-                <div className='relative lg:w-1/2 w-full flex justify-center items-end'>
+                <div className='relative lg:w-1/2 w-full flex justify-center items-end xl:w-[48%]'>
                     <img src={iphone} className='w-80 md:w-96 lg:w-full right-5' alt="iPhone" />
                 </div>
 

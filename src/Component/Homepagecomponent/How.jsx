@@ -10,20 +10,20 @@ const steps = [
 
 const How = () => {
   return (
-    <div className="px-4 py-12">
+    <div className="px-4 py-8 flex flex-col gap-10">
       <h1 className="text-center text-3xl md:text-5xl lg:text-[64px] font-bold text-[#212121] mb-20">
-        How DailyGo Works
+        How DailyGo Work ?
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-14 text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-20 text-center">
         {steps.map((step) => (
           <div
             key={step.id}
-            className="p-6 w-full h-auto md:h-[240px] flex flex-col items-center justify-center border rounded-lg shadow-md bg-white relative"
+            className="p-6 w-[70%] md:w-full mx-auto h-[250px] lg:h-[260px] flex flex-col items-center justify-center border rounded-3xl shadow-md bg-white relative"
           >
-            <div className="w-20 h-20 absolute -top-8 flex items-center justify-center bg-gray-200 rounded-full text-lg font-semibold shadow-md">
-              {step.id}
+            <div className="w-32 h-32 lg:w-40 lg:h-40 absolute -top-16 flex items-center justify-center bg-[#ECEDFF] rounded-full text-lg font-semibold shadow-md">
+              {/* {step.id} */}
             </div>
-            <h3 className="mt-10 font-semibold text-lg">{step.card}</h3>
+            <h3 className="mt-12 font-semibold text-lg lg:mt-20">{step.card}</h3>
             <p className="text-sm text-gray-600 mt-2">
               Get reliable, affordable, and on-demand store services at your fingertips.
             </p>

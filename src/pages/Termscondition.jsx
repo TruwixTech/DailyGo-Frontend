@@ -5,6 +5,7 @@ import Footer from '../Component/Footer'
 import starw from '../assets/starwhite.png'
 import righth from '../assets/line.svg'
 import rightv from '../assets/left2.png'
+import shadow from '../assets/shadow.png'
 
 const TermsPage = () => {
     useEffect(() => {
@@ -13,7 +14,7 @@ const TermsPage = () => {
 
     return (
         <>
-            <div className='p-6 w-full h-auto overflow-hidden'>
+            <div className='p-4 md:p-8 w-full h-auto overflow-hidden'>
                 <div className='w-full md:h-[297px] h-auto relative bg-[#004439] rounded-3xl flex flex-col  gap-2 md:pb-10 pb-6  '>
                     <Navbar />
                     <div className='h-[0.5px] w-[90%] mx-auto bg-[#4a7069]' />
@@ -21,6 +22,7 @@ const TermsPage = () => {
                     <img src={starw} className='hidden md:block absolute top-[134px] right-24' />
                     <img src={righth} className='hidden md:block absolute top-44 -right-25 ' />
                     <img src={rightv} className='hidden md:block absolute top-44 right-27' />
+                    <img src={shadow} className='absolute top-0 left-0' />
                     <h1 className='text-center font-semibold text-[30px] md:text-[60px] text-white'>Terms and Conditions</h1>
                     <div className='flex gap-2 items-center justify-center text-white '>
                         <span >Home</span><span>-</span><span>Terms and Conditions</span>

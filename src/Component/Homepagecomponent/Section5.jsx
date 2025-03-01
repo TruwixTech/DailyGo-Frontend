@@ -6,7 +6,7 @@ import icon from '../../assets/Group.svg'
 import icon1 from '../../assets/Group1.svg'
 function Dailygo() {
   return (
-    <div className='h-full w-full bg-[#fffcfa] flex flex-col lg:flex-row justify-center items-center overflow-hidden md:px-20 px-4 md:mt-30 '>
+    <div className='h-full w-full mb-10 bg-[#fffcfa] flex flex-col lg:flex-row justify-center items-center overflow-hidden md:px-20 px-4 md:mt-30 '>
       <div className=' w-full md:w-1/2 flex justify-center  items-center md:py-10 lg:py-16 py-10 '>
         <div className=' w-[100px] sm:w-[250px] md:w-[290px]   h-full relative z-30 md:left-10 bottom-10 py-10  flex justify-center items-center'>
           <img src={Bgimage3} alt='dailygo' className='w-full' />
@@ -19,11 +19,10 @@ function Dailygo() {
 
       <div className=' w-full md:w-[70%] lg:w-1/2 flex flex-col gap-10 mt-5'>
         <div className='w-full flex flex-col gap-7 justify-center items-center'>
-          <h1 className=' text-[30px] md:text-[60px] md:leading-16 font-bold text-black'>Daily Go: <br />
-            Your Local Labour Solution</h1>
+          <h1 className=' text-[30px] md:text-[60px] md:leading-16 font-bold text-black'>Download our app from Platforms</h1>
           <div className='flex flex-col gap-6 '>
-            <p className='text-[14px]  text-gray-500'>Welcome to Daily Go, the app designed to connect you with skilled local labourers for all your needs. Whether you’re looking for a brick picker for your home construction or a reliable majdoor for everyday tasks.</p>
-            <p className='text-[14px]  text-gray-500'>Daily Go makes hiring easy and efficient. With just a few taps, find trusted labourers in your area who are ready to help you get the job done. Empowering communities, one job at a time—experience hassle-free hiring with Daily Go!</p>
+            <p className='text-[14px]  text-gray-500'>The Strong Workout Tracker is designed for serious individuals who have significant workout experience and a clear understanding of their fitness goals.</p>
+            <p className='text-[14px]  text-gray-500'>The Strong Workout Tracker is designed for serious individuals who have significant workout experience and a clear understanding of their fitness goals.</p>
           </div>
         </div>
 
