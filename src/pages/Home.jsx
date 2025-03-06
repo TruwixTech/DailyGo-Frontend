@@ -40,7 +40,7 @@ const HomePage = () => {
                         {/* Left Side - Text & CTA */}
                         <div className="lg:w-1/2 w-full flex flex-col items-center justify-center text-center pt-10 lg:pt-24 xl:gap-4">
                             <h1 className="text-2xl md:text-[50px] xl:text-[61px] font-bold  font-Satoshi leading-tight">
-                                Find Skilled Laborers for<span> Any Job, Anytime!</span>
+                                Find Professional Workers for<span> Any Job, Anytime!</span>
                             </h1>
                             <p className="mt-4 text-lg text-gray-300 font-bold font-Satoshi lg:px-16">
                                 Get reliable, affordable, and on-demand labor services at your fingertips.
