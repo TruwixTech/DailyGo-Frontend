@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import ring from '../assets/ring.png'
 import Navbar from '../Component/Navbar'
 import Footer from '../Component/Footer'
@@ -8,7 +8,10 @@ import rightv from '../assets/left2.png'
 import shadow from '../assets/shadow.png'
 
 const TermsPage = () => {
+    const [loaded, setLoaded] = useState(false);
+
     useEffect(() => {
+        setLoaded(true);
         window.scrollTo(0, 0)
     }, [])
 
@@ -18,11 +21,20 @@ const TermsPage = () => {
                 <div className='w-full md:h-[297px] h-auto relative bg-[#004439] rounded-3xl flex flex-col  gap-2 md:pb-10 pb-6  '>
                     <Navbar />
                     <div className='h-[0.5px] w-[90%] mx-auto bg-[#4a7069]' />
-                    <img src={ring} className=' absolute top-0 w-full h-full' />
-                    <img src={starw} className='hidden md:block absolute top-[134px] right-24' />
+                    <img
+                        src={ring}
+                        className={`absolute w-full h-full top-0 transition-transform duration-1000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                    />
+                    <img
+                        src={shadow}
+                        className={`absolute top-0 left-0 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                    />
+                    <img
+                        src={starw}
+                        className={`absolute top-30 right-24 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                    />
                     <img src={righth} className='hidden md:block absolute top-44 -right-25 ' />
                     <img src={rightv} className='hidden md:block absolute top-44 right-27' />
-                    <img src={shadow} className='absolute top-0 left-0' />
                     <h1 className='text-center font-semibold text-[30px] md:text-[60px] text-white'>Terms and Conditions</h1>
                     <div className='flex gap-2 items-center justify-center text-white '>
                         <span >Home</span><span>-</span><span>Terms and Conditions</span>

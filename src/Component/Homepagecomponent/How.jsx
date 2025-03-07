@@ -18,7 +18,7 @@ const How = () => {
         {steps.map((step) => (
           <div
             key={step.id}
-            className="p-6 w-[70%] md:w-full mx-auto h-[250px] lg:h-[260px] flex flex-col items-center justify-center border rounded-3xl shadow-md bg-white relative"
+            className="p-6 w-[70%] md:hover:shadow-2xl duration-500 ease-in-out transition-all cursor-pointer md:w-full mx-auto h-[250px] lg:h-[260px] flex flex-col items-center justify-center border rounded-3xl shadow-md bg-white relative"
           >
             <div className="w-32 h-32 lg:w-40 lg:h-40 absolute -top-16 flex items-center justify-center bg-[#ECEDFF] rounded-full text-lg font-semibold shadow-md">
               {/* {step.id} */}
