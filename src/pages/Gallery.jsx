@@ -11,6 +11,8 @@ import rightv from '../assets/left2.png'
 
 function Gallery() {
     const [selectedImage, setSelectedImage] = useState(image1);
+    const [loaded, setLoaded] = useState(false);
+
     // Image array
     const images = [image1, image1, image1, image1, image1, image1];
 
@@ -31,6 +33,10 @@ function Gallery() {
         );
     };
 
+    useEffect(() => {
+        setLoaded(true);
+    }, []);
+
     return (
         <>
             <div className="w-full h-auto bg-white p-4 md:p-8 overflow-hidden">
@@ -44,9 +50,18 @@ function Gallery() {
                     <div className="flex gap-2 items-center justify-center text-white pt-4">
                         <span>Home</span> <span>-</span> <span>Gallery</span>
                     </div>
-                    <img src={ring} className="absolute top-0 w-full h-full" alt="ring" />
-                    <img src={shadow} className='absolute top-0 left-0' />
-                    <img src={starw} className='hidden md:block absolute top-30 right-24' />
+                    <img
+                        src={ring}
+                        className={`absolute w-full h-full top-0 transition-transform duration-1000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                    />
+                    <img
+                        src={shadow}
+                        className={`absolute top-0 left-0 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                    />
+                    <img
+                        src={starw}
+                        className={`absolute top-30 right-24 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                    />
                     <img src={righth} className='hidden md:block absolute top-40 -right-25 ' />
                     <img src={rightv} className='hidden md:block absolute top-40 right-27' />
                 </div>

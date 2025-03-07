@@ -27,14 +27,14 @@ const Navbar = () => {
                     />
                 )}
                 {isOpen && (
-                    <div className="w-[90%] items-center  absolute top-20 right-5 bg-white shadow-lg rounded-xl flex flex-col gap-4 p-4 z-[100] md:flex lg:hidden ">
+                    <div className="w-[90%] items-center  absolute top-20 right-5 bg-white shadow-lg rounded-xl flex flex-col gap-4 p-4 z-50 md:flex lg:hidden ">
                         <NavLink
                             to="/"
                             className="text-[#01210F] text-xl  font-Satoshi"
                         >
                             Home
                         </NavLink>
-                        <NavLink
+                        {/* <NavLink
                             to="/about"
                             className="text-[#01210F] text-xl  font-Satoshi"
                             onClick={() => setIsOpen(false)}
@@ -47,7 +47,7 @@ const Navbar = () => {
                             onClick={() => setIsOpen(false)}
                         >
                             Our Team
-                        </NavLink>
+                        </NavLink> */}
                         {/*<NavLink
                             to="/news"
                             className="text-[#01210F] text-xl  font-Satoshi"
@@ -85,12 +85,12 @@ const Navbar = () => {
                     <NavLink to="/" className="text-white text-2xl  font-Satoshi">
                         Home
                     </NavLink>
-                    <NavLink to="/about" className="text-white text-2xl  font-Satoshi">
+                    {/* <NavLink to="/about" className="text-white text-2xl  font-Satoshi">
                         About Us
                     </NavLink>
                      <NavLink to="/team" className="text-white text-2xl  font-Satoshi">
                         Our Team
-                    </NavLink>
+                    </NavLink> */}
                     {/* <NavLink to="/news" className="text-white text-2xl  font-Satoshi">
                         News
                     </NavLink> */}

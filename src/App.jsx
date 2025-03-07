@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Contactus from './pages/Contactus';
 import Termscondition from './pages/Termscondition';
 import Gallery from "./pages/Gallery";
+import RegistrationForm from "./pages/RegistrationForm";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
        <Route path="/contactus" element={<Contactus />} />
        <Route path="/termscondition" element={<Termscondition/>} />
        <Route path="/gallery" element={<Gallery/>} />
+       <Route path="/registration-form" element={<RegistrationForm/>} />
       </Routes>
 
     </Router>
