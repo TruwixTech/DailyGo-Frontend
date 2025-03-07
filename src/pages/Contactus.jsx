@@ -140,7 +140,7 @@ function Contactus() {
           />
           <img
             src={starw}
-            className={`absolute top-30 right-24 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+            className={` absolute top-30 right-5 sm:right-24 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
           />
           <img src={righth} className='hidden md:block absolute top-40 -right-25 ' />
           <img src={rightv} className='hidden md:block absolute top-40 right-27' />

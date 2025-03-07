@@ -9,18 +9,18 @@ function Section1() {
     const box = [
         {
             icon: img1,
-            item: 'Easily Track Your jobs',
-            description: "Get reliable, affordable, and on-demand labor services at your fingertips.",
+            item: 'Easily Track Your Jobs',
+            description: "View and manage all your job requests in one place with real-time updates.",
         },
         {
             icon: img1,
-            item: 'Easily Track Your jobs',
-            description: "Get reliable, affordable, and on-demand labor services at your fingertips.",
+            item: 'Get Skilled Workers on Demand',
+            description: "Instantly hire verified professionals for any event or requirement.",
         },
         {
             icon: img1,
-            item: 'Easily Track Your jobs',
-            description: "Get reliable, affordable, and on-demand labor services at your fingertips.",
+            item: 'Attendance Management',
+            description: "Keep track of worker attendance effortlessly through our app.",
         }
     ];
 

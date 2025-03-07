@@ -76,37 +76,37 @@ const Section4 = () => {
                             <div className={`hidden md:block absolute top-0 lg:top-12 left-0 lg:left-50 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card />
+                                   <Card title={'Easily Track Your Jobs'} content={'View and manage all your job requests in one place with real-time updates.'} />
                             </div>
 
                             <div className={`hidden md:block absolute lg:top-12 right-0 lg:right-50 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card />
+                                   <Card title={'Get Skilled Workers on Demand'} content={'Instantly hire verified professionals for any event or requirement.'}/>
                             </div>
 
                             <div className={`hidden md:block absolute top-[220px] lg:top-[310px] left-0 lg:left-5 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card />
+                                   <Card title={'Attendance Management'} content={'Keep track of worker attendance effortlessly through our app.'}/>
                             </div>
 
                             <div className={`hidden md:block absolute top-[220px] lg:top-[310px] right-0 lg:right-5 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card />
+                                   <Card title={'Timely Payment'} content={'Ensure secure and on-time payments for all your workers.'}/>
                             </div>
 
                             <div className={`hidden md:block absolute -bottom-0 lg:-bottom-14 right-0 lg:right-50 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card />
+                                   <Card title={'Get Job Easily'} content={'Find and apply for jobs that match your skills with just a few clicks.'}/>
                             </div>
 
                             <div className={`hidden md:block absolute -bottom-0 lg:-bottom-14 left-0 lg:left-50 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card />
+                                   <Card title={'Trusted Partners'} content={'Work with verified event managers and professionals for reliable service.'}/>
                             </div>
 
                             {/* Mobile Grid */}

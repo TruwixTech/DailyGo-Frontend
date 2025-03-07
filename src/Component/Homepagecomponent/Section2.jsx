@@ -50,8 +50,12 @@ function Section2() {
                     </button>
                 </div>
 
+                <div className='relative lg:hidden lg:w-1/2 w-full flex justify-center items-end xl:w-[48%]'>
+                <img src={iphone} alt="phone image" className='w-full' />
+                </div>
+
                 {/* Right Image */}
-                <div ref={sectionRef} className="relative lg:w-1/2 w-full flex justify-center items-end xl:w-[48%]">
+                <div ref={sectionRef} className="relative hidden lg:flex lg:w-1/2 w-full justify-center items-end xl:w-[48%]">
                     <div className="flip-container">
                         <div className={`flip-card ${isFlipped ? "flipped" : ""}`}>
                             {/* Front Image */}
