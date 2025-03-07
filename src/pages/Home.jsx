@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../Component/Navbar'
-import Hero from '../assets/hero.svg'
+import Hero from '../assets/hero.webp'
 import watch from '../assets/watch.svg'
 import Ring from '../assets/ring.png'
 import Section from '../Component/Homepagecomponent/Section'

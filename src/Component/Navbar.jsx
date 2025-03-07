@@ -34,27 +34,6 @@ const Navbar = () => {
                         >
                             Home
                         </NavLink>
-                        {/* <NavLink
-                            to="/about"
-                            className="text-[#01210F] text-xl  font-Satoshi"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            About Us
-                        </NavLink>
-                         <NavLink
-                            to="/team"
-                            className="text-[#01210F] text-xl  font-Satoshi"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            Our Team
-                        </NavLink> */}
-                        {/*<NavLink
-                            to="/news"
-                            className="text-[#01210F] text-xl  font-Satoshi"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            News
-                        </NavLink> */}
                         <NavLink
                             to="/gallery"
                             className="text-[#01210F] text-xl  font-Satoshi"
@@ -70,6 +49,12 @@ const Navbar = () => {
                             Contact
                         </NavLink>
                         <NavLink
+                            to="/registration-form"
+                            className=" py-2 bg-[#366059] rounded-3xl text-[16px] text-[#ffffff] font-Satoshi px-6 xl:py-2.5"
+                        >
+                            Register Now
+                        </NavLink>
+                        <NavLink
                             to="/"
                             className=" px-3 py-2 bg-[#ffff] rounded-3xl text-[16px] text-[#366059] font-Satoshi xl:py-2.5"
                             style={{
@@ -81,7 +66,7 @@ const Navbar = () => {
 
                     </div>
                 )}
-                <div className="hidden gap-6 lg:flex xl:gap-12">
+                <div className="hidden gap-6 lg:flex xl:gap-8">
                     <NavLink to="/" className="text-white text-2xl  font-Satoshi">
                         Home
                     </NavLink>
@@ -104,17 +89,28 @@ const Navbar = () => {
                         Contact
                     </NavLink>
                 </div>
+                <div className='w-auto h-auto flex  gap-5'>
                 <NavLink
-                    to="/registration"
-                    className="hidden lg:flex px-6 font-semibold py-2 bg-[#ffff]  text-[16px] rounded-3xl text-[#366059] font-Satoshi xl:py-2.5"
+                    to="/registration-form"
+                    className="hidden lg:flex px-6 font-semibold py-2 bg-[#366059] md:hover:bg-[#ffff] md:hover:text-[#366059] duration-500 ease-in-out text-[16px] rounded-3xl text-white font-Satoshi xl:py-2.5"
+                    style={{
+                        boxShadow: "white", // Custom box shadow
+                    }}
+                >
+                    Register Now
+                </NavLink>
+                <NavLink
+                    to="/"
+                    className="hidden lg:flex px-6 font-semibold py-2 bg-[#ffff]  text-[16px] rounded-3xl text-[#366059] md:hover:bg-[#366059] md:hover:text-[#ffff] duration-500 ease-in-out font-Satoshi xl:py-2.5"
                     style={{
                         boxShadow: "white", // Custom box shadow
                     }}
                 >
                     Download the App
                 </NavLink>
+                </div>
             </div>
-        
+
         </div>
     )
 }
