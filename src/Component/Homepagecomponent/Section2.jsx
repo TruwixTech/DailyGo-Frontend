@@ -1,8 +1,35 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import image from '../../assets/bgimage3.png';
 import iphone from '../../assets/iPhone.png';
 
 function Section2() {
+
+    const [isFlipped, setIsFlipped] = useState(false);
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIsFlipped(true);
+                    }
+                });
+            },
+            { threshold: 0.5 } // Triggers when 50% of the section is visible
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
+
     return (
         <div className='w-full min-h-screen flex flex-col py-10 px-4 md:px-12 lg:px-14'>
             <div className='w-full md:h-auto lg:h-[600px] h-auto bg-[#004439] rounded-2xl relative flex flex-col lg:flex-row overflow-hidden'>
@@ -18,14 +45,21 @@ function Section2() {
                     <p className='lg:text-lg text-white'>
                         The Strong Workout Tracker is designed for serious individuals who have significant workout experience and a clear understanding of their fitness goals.
                     </p>
-                    <button className="w-full lg:w-1/3 px-6 py-3 bg-white text-[#366059] font-semibold rounded-full">
+                    <button className="w-full lg:w-1/3 px-6 py-3 bg-white text-[#366059] md:hover:bg-[#366059] md:hover:text-white cursor-pointer duration-300 font-semibold rounded-full">
                         Learn More
                     </button>
                 </div>
 
                 {/* Right Image */}
-                <div className='relative lg:w-1/2 w-full flex justify-center items-end xl:w-[48%]'>
-                    <img src={iphone} className='w-80 md:w-96 lg:w-full right-5' alt="iPhone" />
+                <div ref={sectionRef} className="relative lg:w-1/2 w-full flex justify-center items-end xl:w-[48%]">
+                    <div className="flip-container">
+                        <div className={`flip-card ${isFlipped ? "flipped" : ""}`}>
+                            {/* Front Image */}
+                            <div className="flip-card-front"></div>
+                            {/* Back Image */}
+                            <div className="flip-card-back"></div>
+                        </div>
+                    </div>
                 </div>
 
             </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import Bgimage from '../assets/Bgimage4.png'
 import ring from '../assets/ring.png'
 import Navbar from '../Component/Navbar'
@@ -20,7 +20,7 @@ function Contactus() {
     subject: "",
     message: "",
   });
-
+  const [loaded, setLoaded] = useState(false);
   const [loading, setLoading] = useState(false);
 
   // Handle input change
@@ -113,6 +113,11 @@ function Contactus() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   return (
     <>
       <div className='w-full h-auto bg-white p-4 md:p-8 overflow-x-hidden'>
@@ -125,11 +130,20 @@ function Contactus() {
           <div className='flex gap-2 items-center justify-center text-white pt-4'>
             <span >Home</span><span>-</span><span>Contact us</span>
           </div>
-          <img src={ring} className=' absolute top-0 w-full h-full' />
-          <img src={starw} className='hidden md:block absolute top-30 right-24' />
+          <img
+            src={ring}
+            className={`absolute w-full h-full top-0 transition-transform duration-1000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          />
+          <img
+            src={shadow}
+            className={`absolute top-0 left-0 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+          />
+          <img
+            src={starw}
+            className={`absolute top-30 right-24 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+          />
           <img src={righth} className='hidden md:block absolute top-40 -right-25 ' />
           <img src={rightv} className='hidden md:block absolute top-40 right-27' />
-          <img src={shadow} className='absolute top-0 left-0' />
         </div>
         {/* form */}
         <div className="grid md:grid-cols-2 gap-8 pt-10 md:px-10 px-2  py-10">
