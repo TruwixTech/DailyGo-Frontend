@@ -22,7 +22,7 @@ const PopularCategory = () => {
 
             {/* Marquee for Auto Scrolling */}
             <Marquee speed={50} gradient={true} gradientWidth={50} pauseOnHover={true}>
-                <div className="flex gap-6 w-full">
+                <div className="flex gap-6 w-full py-4">
                     {[...categories,...categories].map((category) => (
                         <div key={category.id} className="flex flex-col items-center gap-4 md:hover:scale-105 cursor-pointer duration-500 ease-in-out transition-all mx-4">
                             <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 p-4 lg:p-6 bg-gray-200 flex items-center justify-center rounded-2xl shadow-md">
