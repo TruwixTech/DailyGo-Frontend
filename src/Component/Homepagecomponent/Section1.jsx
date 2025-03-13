@@ -9,18 +9,23 @@ function Section1() {
     const box = [
         {
             icon: img1,
-            item: 'Easily Track Your Jobs',
-            description: "View and manage all your job requests in one place with real-time updates.",
+            item: 'Direct Hiring',
+            description: "Eliminate middlemen for faster,more efficient staffing",
         },
         {
             icon: img1,
-            item: 'Get Skilled Workers on Demand',
-            description: "Instantly hire verified professionals for any event or requirement.",
+            item: 'Verified Workers',
+            description: "Browse Profile with ratings and reviews for quality assurance",
         },
         {
             icon: img1,
-            item: 'Attendance Management',
-            description: "Keep track of worker attendance effortlessly through our app.",
+            item: 'Attendance Tracking',
+            description: "Monitor worker availability and reliability with ease",
+        },
+        {
+            icon: img1,
+            item: 'Effortless Payments',
+            description: "Secure, instant transcations through our escrow wailet system",
         }
     ];
 
@@ -57,20 +62,20 @@ function Section1() {
                 />
                 <img
                     src={Star}
-                    className={`absolute top-40 right-6 md:top-1/3 md:right-20 w-6 md:w-10 lg:w-12 transition-transform duration-1000 ${isVisible ? 'animate-spin' : ''
+                    className={`absolute top-40 right-6 lg:top-40 xl:top-1/4 md:right-20 w-6 md:w-10 lg:w-12 transition-transform duration-1000 ${isVisible ? 'animate-spin' : ''
                         }`}
                 />
-                <img src={BGimage2} className='absolute bottom-0 right-0 w-32 md:w-40 lg:w-48' />
+                {/* <img src={BGimage2} className='absolute bottom-0 right-0 w-32 md:w-40 lg:w-48' /> */}
 
                 {/* Title Section */}
                 <div className='text-center pb-6 md:px-10 px-4 w-full flex justify-center gap-10 pt-10 md:pt-4' >
-                    <h1 className='text-2xl text-center md:text-[55px] lg:text-5xl  text-black 2xl:text-6xl font-semibold  md:w-[80%] w-full'>
-                        From construction to cleaning, hire experienced daily workers with ease.
+                    <h1 className='text-2xl text-center md:text-[55px] lg:text-5xl    text-black 2xl:text-6xl font-bold  md:w-[80%] w-full'>
+                        What Makes Daily Go Stand Out
                     </h1>
                 </div>
 
                 {/* Cards Section */}
-                <div className='w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 mt-10 py-7 place-items-center'>
+                <div className='w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-12 mt-10 py-7 place-items-center'>
                     {box.map((box, index) => (
                         <div key={index} className="group border border-gray-200 p-6 md:hover:shadow-2xl duration-700 ease-in-out cursor-pointer hover:bg-[#004439] rounded-xl text-center shadow-md bg-white md:w-[300px] md:gap-4 flex flex-col">
                             <div className="flex justify-center items-center mb-4">
@@ -79,7 +84,7 @@ function Section1() {
                                 </div>
                             </div>
                             <h3 className="text-lg font-semibold text-[#212121] lg:text-2xl group-hover:text-white">{box.item}</h3>
-                            <p className="text-[#656C7B] mt-2 group-hover:text-white">{box.description}</p>
+                            <p className="text-[#656C7B] mt-2 group-hover:text-white ">{box.description}</p>
                         </div>
                     ))}
                 </div>
