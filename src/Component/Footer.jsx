@@ -59,7 +59,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-gray-400 flex flex-col md:flex-row items-center justify-between">
           <div className="flex gap-6 text-sm">
             <Link to="/termscondition">Terms & Conditions</Link>
-            <Link to="/safety-security">Safity & Security</Link>
+            <Link to="/safety-security">Safety & Security</Link>
           </div>
           <div className="flex gap-4 text-xl mt-4 md:mt-0">
             <span className="cursor-pointer"><FaFacebookF size={20} className='text-white' /></span>
