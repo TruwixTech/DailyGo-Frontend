@@ -15,7 +15,7 @@ const Section4 = () => {
               },
               {
                      icon: img1,
-                     item: 'Cost Efective',
+                     item: 'Cost Effective',
                      description: "Pay only for productive hours—no idle time charges.",
 
               },
@@ -83,7 +83,7 @@ const Section4 = () => {
                             <div className={`hidden md:block absolute lg:top-12 right-0 lg:right-50 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card title={'Cost Efective'} content={'Pay only for productive hours—no idle time charges.'} />
+                                   <Card title={'Cost Effective'} content={'Pay only for productive hours—no idle time charges.'} />
                             </div>
 
                             <div className={`hidden md:block absolute top-[220px] lg:top-[310px] left-0 lg:left-5 transition-all duration-700 ease-out ${!isVisible ?

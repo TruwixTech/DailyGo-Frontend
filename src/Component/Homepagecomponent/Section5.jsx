@@ -21,8 +21,8 @@ function Dailygo() {
         <div className='w-full flex flex-col gap-7 justify-center items-center'>
           <h1 className=' text-[30px] md:text-[60px] md:leading-16 font-bold text-black'>Download our app from Platforms</h1>
           <div className='flex flex-col gap-6 '>
-            <p className='text-[14px]  text-gray-500'>The Strong Workout Tracker is designed for serious individuals who have significant workout experience and a clear understanding of their fitness goals.</p>
-            <p className='text-[14px]  text-gray-500'>The Strong Workout Tracker is designed for serious individuals who have significant workout experience and a clear understanding of their fitness goals.</p>
+            <p className='text-[14px]  text-gray-500'>Daily Go connects businesses with trusted local talent—fast, reliable, and hassle-free. Seamless hiring at your fingertips—just a tap away, and we’ll handle the rest!</p>
+            <p className='text-[14px]  text-gray-500'>Let's make your next event seamless!</p>
           </div>
         </div>
 
