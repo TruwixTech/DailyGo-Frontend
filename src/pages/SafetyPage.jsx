@@ -48,7 +48,7 @@ const SafetySecurityPage = () => {
                 {/* Content Section */}
                 <div className="px-4 md:px-20 pt-28 pb-10">
                     <h1 className="text-center text-[24px] mt-4 py-6">
-                        <span className='text-[#366059]'>Safe. Secure. Reliable.</span>
+                        <span className='text-[#366059] text-2xl lg:text-4xl xl:text-6xl font-semibold'>Safe. Secure. Reliable.</span>
                     </h1>
                     <p className='text-center text-[18px]'>
                         At Daily Go, your trust and security come first.

@@ -84,9 +84,9 @@ const HomePage = () => {
                     </div>
                     <Section />
                 </div>
-                <div className='flex md:flex-row flex-col gap-8 md:gap-20 justify-center items-center py-20 lg:pb-0'>
-                    <button className="w-full lg:w-[40%]  flex items-center shadow-md md:hover:shadow-2xl duration-500 ease-in-out justify-center gap-4 px-4 py-2 bg-[#004439] text-white font-bold md:text-[30px] rounded-lg cursor-pointer"><span><img src={hireworker} className='w-full h-full pr-6 ' /></span>Find Worker</button>
-                    <button className='w-full lg:w-[40%] flex  items-center shadow-md md:hover:shadow-2xl duration-500 ease-in-out justify-center gap-4  px-4 py-2 bg-[#004439] text-white md:text-[30px] font-bold rounded-lg cursor-pointer'><span><img src={findworker} className='w-full h-full pr-6' /></span>Find Work</button>
+                <div className='flex md:flex-row flex-col gap-8 md:gap-20 justify-center items-center py-10 lg:pb-0'>
+                    <button className="w-full lg:w-[40%] xl:w-[30%] xl:text-xl flex items-center shadow-md md:hover:shadow-2xl duration-500 ease-in-out justify-center gap-4 px-4 py-2 bg-[#004439] text-white font-bold md:text-[30px] rounded-lg cursor-pointer"><span><img src={hireworker} className='w-full h-full pr-6 ' /></span>Find Worker</button>
+                    <button className='w-full lg:w-[40%] xl:w-[30%] xl:text-xl flex  items-center shadow-md md:hover:shadow-2xl duration-500 ease-in-out justify-center gap-4  px-4 py-2 bg-[#004439] text-white md:text-[30px] font-bold rounded-lg cursor-pointer'><span><img src={findworker} className='w-full h-full pr-6' /></span>Find Work</button>
                 </div>
 
             </div>
