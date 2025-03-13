@@ -18,7 +18,7 @@ const TermsPage = () => {
     return (
         <>
             <div className='p-4 md:p-8 w-full h-auto overflow-hidden'>
-                <div className='w-full md:h-[297px] h-auto relative bg-[#004439] rounded-3xl flex flex-col  gap-2 md:pb-10 pb-6  '>
+                <div className='w-full md:h-[297px] h-auto relative bg-[#004439] rounded-3xl flex flex-col  gap-2 md:pb-10 pb-6 py-2 '>
                     <Navbar />
                     <div className='h-[0.5px] w-[90%] mx-auto bg-[#4a7069]' />
                     <img
