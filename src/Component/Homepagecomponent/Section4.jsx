@@ -10,18 +10,19 @@ const Section4 = () => {
        const box = [
               {
                      icon: img1,
-                     item: 'Easily Track Your jobs',
-                     description: "Get reliable, affordable, and on-demand labor services at your fingertips.",
+                     item: 'On Demand Staffing',
+                     description: " Get extra hands only when you need them—weekends, peak seasons, or special events.",
               },
               {
                      icon: img1,
-                     item: 'Easily Track Your jobs',
-                     description: "Get reliable, affordable, and on-demand labor services at your fingertips.",
+                     item: 'Cost Efective',
+                     description: "Pay only for productive hours—no idle time charges.",
+
               },
               {
                      icon: img1,
-                     item: 'Easily Track Your jobs',
-                     description: "Get reliable, affordable, and on-demand labor services at your fingertips.",
+                     item: 'Rapid Hiring',
+                     description: "Find the right workers in 24-48 hours, not weeks.",
               }, {
                      icon: img1,
                      item: 'Easily Track Your jobs',
@@ -29,14 +30,14 @@ const Section4 = () => {
               },
               {
                      icon: img1,
-                     item: 'Easily Track Your jobs',
-                     description: "Get reliable, affordable, and on-demand labor services at your fingertips.",
+                     item: 'Quality You Can Trust',
+                     description: "All workers are screened and trained for top performance..",
               },
               {
                      icon: img1,
                      item: 'Easily Track Your jobs',
                      description: "Get reliable, affordable, and on-demand labor services at your fingertips.",
-              }
+              },
        ];
 
        useEffect(() => {
@@ -76,37 +77,37 @@ const Section4 = () => {
                             <div className={`hidden md:block absolute top-0 lg:top-12 left-0 lg:left-50 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card title={'Easily Track Your Jobs'} content={'View and manage all your job requests in one place with real-time updates.'} />
+                                   <Card title={'On Demand Staffing'} content={'Get extra hands only when you need them—weekends, peak seasons, or special events.'} />
                             </div>
 
                             <div className={`hidden md:block absolute lg:top-12 right-0 lg:right-50 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card title={'Get Skilled Workers on Demand'} content={'Instantly hire verified professionals for any event or requirement.'}/>
+                                   <Card title={'Cost Efective'} content={'Pay only for productive hours—no idle time charges.'} />
                             </div>
 
                             <div className={`hidden md:block absolute top-[220px] lg:top-[310px] left-0 lg:left-5 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card title={'Attendance Management'} content={'Keep track of worker attendance effortlessly through our app.'}/>
+                                   <Card title={'Rapid Hiring'} content={'Find the right workers in 24-48 hours, not weeks'} />
                             </div>
 
                             <div className={`hidden md:block absolute top-[220px] lg:top-[310px] right-0 lg:right-5 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card title={'Timely Payment'} content={'Ensure secure and on-time payments for all your workers.'}/>
+                                   <Card title={'Easily Track Your jobs'} content={'Get reliable, affordable, and on-demand labor services at your fingertips.'} />
                             </div>
 
                             <div className={`hidden md:block absolute -bottom-0 lg:-bottom-14 right-0 lg:right-50 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card title={'Get Job Easily'} content={'Find and apply for jobs that match your skills with just a few clicks.'}/>
+                                   <Card title={'Quality You Can Trust'} content={'Find and apply for jobs that match your skills with just a few clicks.'} />
                             </div>
 
                             <div className={`hidden md:block absolute -bottom-0 lg:-bottom-14 left-0 lg:left-50 transition-all duration-700 ease-out ${!isVisible ?
                                    'opacity-0 scale-50 translate-x-[-50%] translate-y-[-50%]' :
                                    'opacity-100 scale-100 translate-x-0 translate-y-0'}`}>
-                                   <Card title={'Trusted Partners'} content={'Work with verified event managers and professionals for reliable service.'}/>
+                                   <Card title={'Trusted Partners'} content={'Work with verified event managers and professionals for reliable service.'} />
                             </div>
 
                             {/* Mobile Grid */}

@@ -17,6 +17,7 @@ import shadow from '../assets/shadow.png'
 import PopularCategory from '../Component/Homepagecomponent/PopularCategory'
 import How from '../Component/Homepagecomponent/How'
 import Headings from '../Component/Homepagecomponent/Headings'
+import Why from '../Component/Homepagecomponent/Why'
 
 const HomePage = () => {
     const [loaded, setLoaded] = useState(false);
@@ -29,9 +30,8 @@ const HomePage = () => {
     }, []);
     return (
         <>
-
             <div className='w-full min-h-screen bg-white p-4 md:p-8'>
-                <div className=' rounded-3xl  bg-[#004439] overflow-hidden relative '>
+                <div className=' rounded-3xl  bg-[#004439] overflow-hidden relative py-2'>
                     {/* Decorative Elements with Animation */}
                     <img
                         src={Ring}
@@ -49,17 +49,17 @@ const HomePage = () => {
                         className={`absolute top-0 left-0 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
                     />
                     <Navbar />
-                    <div className='h-[0.5px] w-[90%] mx-auto bg-[#4a7069]  ' />
+                    <div className='h-[0.5px] w-[90%] mx-auto bg-[#4a7069] mt-4  ' />
                     <div className="flex flex-col lg:flex-row items-center justify-between px-6 md:px-20 text-white gap-8 relative z-20 lg:items-start">
                         {/* Text Content with Staggered Animation */}
-                        <div className="lg:w-1/2 w-full flex flex-col items-center justify-center text-center pt-10 lg:pt-24 xl:gap-4">
+                        <div className="lg:w-1/2 w-full flex flex-col items-center  justify-center text-center pt-10 lg:pt-24 xl:gap-4">
                             <h1 className={`text-2xl md:text-[50px] xl:text-[61px] font-bold font-Satoshi leading-tight transition-transform duration-700 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                                 }`}>
-                                Find Professional Workers for<span> Any Job, Anytime!</span>
+                                Welcome to Daily Go – Your Trusted Gig Workforce
                             </h1>
-                            <p className={`mt-4 text-lg text-gray-300 font-bold font-Satoshi lg:px-16 transition-opacity duration-700 delay-200 ${loaded ? 'opacity-100' : 'opacity-0'
+                            <p className={`mt-4 text-sm text-gray-300 font-bold font-Satoshi lg:px-16 transition-opacity duration-700 delay-200 ${loaded ? 'opacity-100' : 'opacity-0'
                                 }`}>
-                                Get reliable, affordable, and on-demand labor services at your fingertips.
+                                Need skilled workers for your event or short-term project? Daily Go connects businesses with trusted local talent—fast, reliable, and hassle-free. 
                             </p>
                             <div className={`mt-6 flex flex-col md:flex-row items-center justify-center gap-4 transition-opacity duration-700 delay-300 ${loaded ? 'opacity-100' : 'opacity-0'
                                 }`}>
@@ -93,6 +93,7 @@ const HomePage = () => {
             <Section1 />
             <PopularCategory />
             <Section2 />
+            <Why />
             <How />
             <Headings />
             <Section4 />

@@ -5,6 +5,7 @@ import Contactus from './pages/Contactus';
 import Termscondition from './pages/Termscondition';
 import Gallery from "./pages/Gallery";
 import RegistrationForm from "./pages/RegistrationForm";
+import SafetySecurityPage from "./pages/SafetyPage";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
        <Route path="/termscondition" element={<Termscondition/>} />
        <Route path="/gallery" element={<Gallery/>} />
        <Route path="/registration-form" element={<RegistrationForm/>} />
+       <Route path="/safety-security" element={<SafetySecurityPage/>} />
       </Routes>
 
     </Router>

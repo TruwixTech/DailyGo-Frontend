@@ -41,9 +41,9 @@ function Gallery() {
         <>
             <div className="w-full h-auto bg-white p-4 md:p-8 overflow-hidden">
                 {/* Header Section */}
-                <div className="w-full md:h-[300px] h-auto bg-[#004439] rounded-3xl relative pb-6">
+                <div className="w-full md:h-[300px] h-auto bg-[#004439] rounded-3xl relative pb-6 py-2">
                     <Navbar />
-                    <div className='h-[0.5px] w-[90%] mx-auto bg-[#4a7069]  ' />
+                    <div className='h-[0.5px] w-[90%] mx-auto bg-[#4a7069] mt-4 ' />
                     <h1 className="text-center font-semibold text-[30px] md:text-[60px] lg:text-7xl pt-7 text-white">
                         Gallery
                     </h1>
@@ -60,7 +60,7 @@ function Gallery() {
                     />
                     <img
                         src={starw}
-                        className={`absolute top-30 right-24 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                        className={`absolute top-32 right-24 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
                     />
                     <img src={righth} className='hidden md:block absolute top-40 -right-25 ' />
                     <img src={rightv} className='hidden md:block absolute top-40 right-27' />
