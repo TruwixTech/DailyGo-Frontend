@@ -31,7 +31,7 @@ const TermsPage = () => {
                     />
                     <img
                         src={starw}
-                        className={`absolute top-30 right-24 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                        className={`absolute top-30 right-24 hidden sm:block transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
                     />
                     <img src={righth} className='hidden md:block absolute top-44 -right-25 ' />
                     <img src={rightv} className='hidden md:block absolute top-44 right-27' />
@@ -40,10 +40,9 @@ const TermsPage = () => {
                         <span >Home</span><span>-</span><span>Terms and Conditions</span>
                     </div>
                 </div>
-                <h1 className='text-center text-[24px] mt-4 py-6'><span className='text-[#366059]'>Last Updated:</span>21 Jan 2024</h1>
-                <p className='px-4 md:px-20'>Welcome to DailyGo! These Terms and Conditions ("Terms", "Terms and Conditions") govern your use of the DailyGo mobile application (the "App") and the services provided by DailyGo ("we", "us", or "our"). By downloading, installing, or using the App, you agree to comply with and be bound by these Terms. Please read them carefully.</p>
-                <div className="px-4 md:px-20 pt-28 pb-10 ">
-                    <h1 className="md:text-4xl  text-2xl font-bold mb-4 uppercase text-black" >
+                <p className='px-4 md:px-20 mt-10 lg:mt-14'>Welcome to DailyGo! These Terms and Conditions ("Terms", "Terms and Conditions") govern your use of the DailyGo mobile application (the "App") and the services provided by DailyGo ("we", "us", or "our"). By downloading, installing, or using the App, you agree to comply with and be bound by these Terms. Please read them carefully.</p>
+                <div className="px-4 md:px-20 pt-20 pb-10 ">
+                    <h1 className="md:text-4xl  text-2xl font-bold mb-4 text-black" >
                         1. Acceptance of Terms
                     </h1>
                     <section className="mb-6">

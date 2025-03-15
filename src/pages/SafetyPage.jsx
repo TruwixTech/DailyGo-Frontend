@@ -34,7 +34,7 @@ const SafetySecurityPage = () => {
                     />
                     <img
                         src={starw}
-                        className={`absolute top-30 right-24 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                        className={`absolute top-30 hidden sm:block right-24 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
                         alt="Decorative star"
                     />
                     <img src={righth} className='hidden md:block absolute top-44 -right-25' alt="Decorative line" />
@@ -46,7 +46,7 @@ const SafetySecurityPage = () => {
                 </div>
 
                 {/* Content Section */}
-                <div className="px-4 md:px-20 pt-28 pb-10">
+                <div className="px-4 md:px-20 pt-10  pb-10">
                     <h1 className="text-center text-[24px] mt-4 py-6">
                         <span className='text-[#366059] text-2xl lg:text-4xl xl:text-6xl font-semibold'>Safe. Secure. Reliable.</span>
                     </h1>
